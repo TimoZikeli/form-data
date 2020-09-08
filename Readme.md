@@ -1,4 +1,6 @@
-# Form-Data [![NPM Module](https://img.shields.io/npm/v/form-data.svg)](https://www.npmjs.com/package/form-data) [![Join the chat at https://gitter.im/form-data/form-data](http://form-data.github.io/images/gitterbadge.svg)](https://gitter.im/form-data/form-data)
+# Electron-Form-Data [![NPM Module](https://img.shields.io/npm/v/form-data.svg)](https://www.npmjs.com/package/form-data) [![Join the chat at https://gitter.im/form-data/form-data](http://form-data.github.io/images/gitterbadge.svg)](https://gitter.im/form-data/form-data)
+
+A fork of the form-data library, suitable for use with electron:
 
 A library to create readable ```"multipart/form-data"``` streams. Can be used to submit forms and file uploads to other web applications.
 
@@ -218,7 +220,7 @@ form.append( 'my_file', fs.createReadStream('/foo/bar.jpg'), {filename: 'bar.jpg
 ```
 
 #### _Headers_ getHeaders( [**Headers** _userHeaders_] )
-This method adds the correct `content-type` header to the provided array of `userHeaders`.  
+This method adds the correct `content-type` header to the provided array of `userHeaders`.
 
 #### _String_ getBoundary()
 Return the boundary of the formData. By default, the boundary consists of 26 `-` followed by 24 numbers
